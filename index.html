@@ -1,1 +1,276 @@
-123
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생산기술 직무 지원자 포트폴리오 허브</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* 본문 기본 폰트 크기 16px 이상 보장 */
+        body {
+            font-size: 16px;
+            color: #1f2937;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800 selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold tracking-tight text-brand-600">Sonny</span>
+                    <span class="ml-2 text-xs font-semibold px-2.5 py-0.5 rounded bg-brand-50 text-brand-700 border border-brand-100">생산기술 허브</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                    <a href="#hero" class="hover:text-brand-600 transition-colors py-2">홈</a>
+                    <a href="#about" class="hover:text-brand-600 transition-colors py-2">소개</a>
+                    <a href="#competencies" class="hover:text-brand-600 transition-colors py-2">역량</a>
+                    <a href="#projects" class="hover:text-brand-600 transition-colors py-2">결과물</a>
+                    <a href="#contact" class="hover:text-brand-600 transition-colors py-2">연락처</a>
+                </div>
+                <!-- Mobile Navigation Button -->
+                <div class="md:hidden flex items-center">
+                    <a href="#projects" class="text-xs bg-brand-600 text-white px-3 py-1.5 rounded-lg font-medium shadow-sm hover:bg-brand-700">결과물 보기</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 py-8">
+
+        <!-- 1. 첫 화면 (Hero Section) -->
+        <section id="hero" class="min-h-[70vh] flex flex-col justify-center items-center text-center py-12 border-b border-gray-200">
+            <div class="inline-flex items-center space-x-2 bg-brand-50 border border-brand-100 text-brand-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+                <span>자동차·선박 등 제조/기계 산업 분야</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight max-w-4xl mb-4">
+                <span class="text-brand-600">Sonny</span>의 포트폴리오
+            </h1>
+
+            <p class="text-xl sm:text-2xl font-bold text-gray-800 max-w-3xl mb-6 leading-relaxed">
+                "AGV 제작으로 입증한 문제 해결력으로 정해진 예산 내 생산 효율을 극대화할 생산기술 엔지니어입니다."
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
+                <a href="#projects" class="inline-flex justify-center items-center px-8 py-3.5 border border-transparent text-base font-semibold rounded-xl text-white bg-brand-600 hover:bg-brand-700 shadow-md hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">
+                    결과물 보기
+                    <svg class="ml-2 -mr-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. 소개 (About Section) -->
+        <section id="about" class="scroll-mt-20">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="w-2 h-6 bg-brand-600 rounded-full mr-3"></span>
+                    소개
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                        <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-1">전공</span>
+                        <p class="text-lg font-bold text-gray-900">전기전자공학</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                        <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-1">관심 분야</span>
+                        <p class="text-lg font-bold text-gray-900">자동차, 선박</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                    <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-2">직무 선택 이유</span>
+                    <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                        전기전자공학을 전공하며 습득한 회로 설계 및 제어 지식을 실제 제조 현장의 생산 시스템에 적용하는 것에 큰 흥미를 느꼈습니다. 특히 직접 AGV를 제작하고 하드웨어·센서 문제들을 해결해 나가는 과정에서 생산 라인의 효율성과 안정성을 높이는 생산기술 직무야말로 저의 역량을 가장 잘 발휘할 수 있는 분야라고 확신하게 되었습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 역량 (Competencies Section) -->
+        <section id="competencies" class="scroll-mt-20">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="w-2 h-6 bg-brand-600 rounded-full mr-3"></span>
+                    핵심 역량
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- 강점 1 -->
+                    <div class="border border-gray-200 rounded-xl p-5 hover:border-brand-500 transition-colors">
+                        <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-brand-600 font-bold mb-4">
+                            01
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">회로 설계 및 테스트 역량</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            <span class="font-semibold text-gray-800">[근거]</span> AGV 카트 제작 프로젝트에서 하드웨어 회로를 직접 설계하고 반복적인 주행 테스트를 통해 시스템을 세팅함.
+                        </p>
+                    </div>
+
+                    <!-- 강점 2 -->
+                    <div class="border border-gray-200 rounded-xl p-5 hover:border-brand-500 transition-colors">
+                        <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-brand-600 font-bold mb-4">
+                            02
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">원인 분석 및 해결 능력</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            <span class="font-semibold text-gray-800">[근거]</span> 테스트 중 발생한 센서 고장의 원인을 정격 전류 과부하로 정확히 규명하고 타 센서 과부하 방지 대책 수립.
+                        </p>
+                    </div>
+
+                    <!-- 강점 3 -->
+                    <div class="border border-gray-200 rounded-xl p-5 hover:border-brand-500 transition-colors">
+                        <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-brand-600 font-bold mb-4">
+                            03
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">창의적 한계 극복 역량</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            <span class="font-semibold text-gray-800">[근거]</span> 예산 부족 상황에서 추가 센서 구매 대신 지렛대 원리를 적용해 안정적인 물품 전달 구현.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 결과물 (Projects/Outputs Section) -->
+        <section id="projects" class="scroll-mt-20">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-900 flex items-center">
+                        <span class="w-2 h-6 bg-brand-600 rounded-full mr-3"></span>
+                        결과물 허브 (6일 프로젝트)
+                    </h2>
+                    <span class="text-xs text-gray-500 mt-2 sm:mt-0">매일 하나씩 업데이트되는 카드로 구성되어 있습니다.</span>
+                </div>
+
+                <!-- 1열 Mobile / 3열 Desktop Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Day 2 카드 -->
+                    <div class="border border-gray-200 rounded-xl p-5 bg-white shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-center mb-3 border-b border-gray-100 pb-2">
+                            <h3 class="font-bold text-base text-brand-600">Day 2 결과물 자리</h3>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">준비 중</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><strong class="text-gray-800">문제:</strong> </li>
+                            <li><strong class="text-gray-800">내가 한 일:</strong> </li>
+                            <li><strong class="text-gray-800">사용 기술:</strong> </li>
+                            <li><strong class="text-gray-800">결과:</strong> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Day 3 카드 -->
+                    <div class="border border-gray-200 rounded-xl p-5 bg-white shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-center mb-3 border-b border-gray-100 pb-2">
+                            <h3 class="font-bold text-base text-brand-600">Day 3 결과물 자리</h3>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">준비 중</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><strong class="text-gray-800">문제:</strong> </li>
+                            <li><strong class="text-gray-800">내가 한 일:</strong> </li>
+                            <li><strong class="text-gray-800">사용 기술:</strong> </li>
+                            <li><strong class="text-gray-800">결과:</strong> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Day 4 카드 -->
+                    <div class="border border-gray-200 rounded-xl p-5 bg-white shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-center mb-3 border-b border-gray-100 pb-2">
+                            <h3 class="font-bold text-base text-brand-600">Day 4 결과물 자리</h3>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">준비 중</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><strong class="text-gray-800">문제:</strong> </li>
+                            <li><strong class="text-gray-800">내가 한 일:</strong> </li>
+                            <li><strong class="text-gray-800">사용 기술:</strong> </li>
+                            <li><strong class="text-gray-800">결과:</strong> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Day 5 카드 -->
+                    <div class="border border-gray-200 rounded-xl p-5 bg-white shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-center mb-3 border-b border-gray-100 pb-2">
+                            <h3 class="font-bold text-base text-brand-600">Day 5 결과물 자리</h3>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">준비 중</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><strong class="text-gray-800">문제:</strong> </li>
+                            <li><strong class="text-gray-800">내가 한 일:</strong> </li>
+                            <li><strong class="text-gray-800">사용 기술:</strong> </li>
+                            <li><strong class="text-gray-800">결과:</strong> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Day 6 카드 -->
+                    <div class="border border-gray-200 rounded-xl p-5 bg-white shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-center mb-3 border-b border-gray-100 pb-2">
+                            <h3 class="font-bold text-base text-brand-600">Day 6 결과물 자리</h3>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">준비 중</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><strong class="text-gray-800">문제:</strong> </li>
+                            <li><strong class="text-gray-800">내가 한 일:</strong> </li>
+                            <li><strong class="text-gray-800">사용 기술:</strong> </li>
+                            <li><strong class="text-gray-800">결과:</strong> </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 연락 (Contact Section) -->
+        <section id="contact" class="scroll-mt-20 pb-12">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm text-center">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">연락처</h2>
+                <p class="text-gray-600 mb-6 text-sm sm:text-base">채용 및 기타 문의사항은 아래 이메일 버튼을 통해 연락해 주세요.</p>
+                <a href="mailto:example@email.com" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-brand-600 hover:bg-brand-700 shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    이메일 보내기
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-6">
+        <div class="max-w-6xl mx-auto px-4 text-center text-xs text-gray-500">
+            © 2026 Sonny. 생산기술 직무 포트폴리오 허브.
+        </div>
+    </footer>
+
+</body>
+</html>
